@@ -1,0 +1,296 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "INitrilityFactory",
+  "sourceName": "contracts/interfaces/INitrilityFactory.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "sellerId",
+          "type": "string"
+        }
+      ],
+      "name": "fetchArtistAddressForsellerId",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "sellerId",
+          "type": "string"
+        }
+      ],
+      "name": "fetchCollectionAddressOfArtist",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "trackId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "sellerId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "newTokenURI",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "buyerAddr",
+              "type": "address"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "fPrice",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "sPrice",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "tPrice",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "enum NitrilityCommon.ListingType",
+                  "name": "listingFormatValue",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "totalSupply",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "infiniteSupply",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "infiniteListingDuration",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "infiniteExclusiveDuration",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "enum NitrilityCommon.Exclusivity",
+                  "name": "exclusivity",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "listingStartTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "listingEndTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "exclusiveEndTime",
+                  "type": "uint256"
+                },
+                {
+                  "components": [
+                    {
+                      "internalType": "string",
+                      "name": "name",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "code",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "enum NitrilityCommon.DiscountType",
+                      "name": "discountType",
+                      "type": "uint8"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "percentage",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "fixedAmount",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "infinite",
+                      "type": "bool"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "endTime",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "actived",
+                      "type": "bool"
+                    }
+                  ],
+                  "internalType": "struct NitrilityCommon.DiscountCode",
+                  "name": "discountCode",
+                  "type": "tuple"
+                },
+                {
+                  "internalType": "enum NitrilityCommon.ListingStatus",
+                  "name": "listed",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "signature",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct NitrilityCommon.TemplateType",
+              "name": "templateData",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "counts",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct NitrilityCommon.PurchaseData",
+          "name": "data",
+          "type": "tuple"
+        },
+        {
+          "internalType": "enum NitrilityCommon.LicensingType",
+          "name": "licensingType",
+          "type": "uint8"
+        },
+        {
+          "internalType": "enum NitrilityCommon.EventTypes",
+          "name": "eventType",
+          "type": "uint8"
+        },
+        {
+          "internalType": "enum NitrilityCommon.Exclusivity",
+          "name": "exclusivity",
+          "type": "uint8"
+        }
+      ],
+      "name": "purchaseLicense",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "refunder",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "offerPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "reFundOffer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "sellerId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "sellerName",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "percentage",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isAdmin",
+              "type": "bool"
+            },
+            {
+              "internalType": "enum NitrilityCommon.ReviewStatus",
+              "name": "status",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct NitrilityCommon.ArtistRevenue[]",
+          "name": "artistRevenues",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "revenue",
+          "type": "uint256"
+        }
+      ],
+      "name": "revenueSplits",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
