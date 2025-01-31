@@ -1,45 +1,47 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+Nitrility License Marketplace
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+Overview
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+Nitrility is the first marketplace dedicated to buying, selling, and verifying intellectual property (IP) licenses. Our platform ensures a secure, transparent, and efficient process for creators and businesses to manage their IP transactions.
 
----
+Features
 
-## Edit a file
+Buy & Sell IP Licenses – A seamless platform for acquiring and monetizing intellectual property.
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+Verification System – Ensures authenticity and transparency in IP transactions.
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Decentralized & Secure – Built with cutting-edge technologies to protect users and their assets.
 
----
+Partner Integrations – Works with Spotify, YouTube, Magic Wallet, and more.
 
-## Create a file
+User-Friendly Interface – Optimized for an intuitive experience, ensuring smooth navigation and interactions.
 
-Next, you’ll add a new file to this repository.
+Tech Stack
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+Frontend: React.js (initial UI inspired by Sound.xyz, with custom enhancements)
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+Backend: Node.js, Golang
 
----
+Database: PostgreSQL, DynamoDB
 
-## Clone a repository
+Authentication: Magic Wallet, OAuth
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+Hosting & Deployment: AWS, Vercel
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+Installation
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+Clone the repository:
+
+git clone https://github.com/LogicVirtuoso/nitrility_license_marketplace_smartcontract.git cd license-marketplace
+
+Install dependencies:
+
+npm install
+
+Contribution
+
+We welcome contributions! Feel free to submit pull requests or report issues to help improve the platform.
+
+License
+
+This project is open-source and freely available to the community. Enjoy and innovate!
